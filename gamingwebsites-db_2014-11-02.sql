@@ -146,8 +146,7 @@ CREATE TABLE `users` (
 -- Contenu de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `name`, `role`, `hash_change_password`, `created`, `modified`) VALUES
-(1, 'root', '431452eabe50b5e95bf38db22b4c157f48e8280f', 'root@root.com', NULL, 'admin', NULL, '2014-10-24 17:08:06', '2014-10-24 17:08:06');
+--(1, 'root', '431452eabe50b5e95bf38db22b4c157f48e8280f', 'root@root.com', NULL, 'admin', NULL, '2014-10-24 17:08:06', '2014-10-24 17:08:06');
 
 --
 -- Index pour les tables exportées

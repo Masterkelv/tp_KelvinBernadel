@@ -6,4 +6,10 @@
 
 	2 - Importer le fichier sql se trouvant dans cakeStrap-master
 
-	3 - Testez
+	3 - Informations sur l'utilisateur admin:
+		
+		- Email        : root@root.com
+		
+		- Mot de passe : root
+
+	4 - Testez

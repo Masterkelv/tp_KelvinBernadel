@@ -205,3 +205,67 @@ Stack Trace:
 #3 I:\Users\Kelvin\Downloads\UniServerZ\www\cakeStrap-master\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-20 19:41:57 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /cakeStrap-master/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#5 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(931): include('C:\Program File...')
+#7 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#8 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Users\login.ctp(2): View->element('form_login')
+#11 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(931): include('C:\Program File...')
+#12 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#13 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#14 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#15 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#16 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#17 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2014-12-20 19:53:33 Error: Fatal Error (1): Call to a member function viewVars() on a non-object in [C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\Controller\UsersController.php, line 222]
+2014-12-20 19:53:33 Error: [FatalErrorException] Call to a member function viewVars() on a non-object
+Request URL: /cakeStrap-master/eng/users/remember_password
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Program File...', 222)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Program File...', 222, Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Program File...', 222, Array)
+#3 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-20 20:37:33 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /cakeStrap-master/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#5 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(931): include('C:\Program File...')
+#7 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#8 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Users\login.ctp(2): View->element('form_login')
+#11 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(931): include('C:\Program File...')
+#12 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#13 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#14 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#15 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#16 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#17 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}

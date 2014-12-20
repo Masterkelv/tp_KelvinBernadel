@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-lg-4 col-lg-offset-4">
-    <?php echo $this->Form->create('User');?>
+    <?php echo $this->Form->create('User', array('type' => 'file'));?>
     <div class="center">
       <h2><?php echo $label ?></h2>
     </div>
@@ -25,6 +25,8 @@
             'options' => array('admin' => __('Admin'), 'author' => __('Author')),
             'selected' => !empty( $user['role'] ) ? $user['role'] : ''));?>
 	      <?php }?>
+
+          <?= $this->Form->input('avatar_file', array('label' => 'Choisissez votre image de profile (png ou jpg)', 'type' => 'file'));?>
       
         <?php echo $this->Form->end(__("Submit"));?>
   </div>
