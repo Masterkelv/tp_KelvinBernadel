@@ -1,0 +1,9 @@
+
+    INSTALLATION DE LA BASE DE DONNÉES
+
+
+	1 - Créer une base de données "gamingwebsites"
+
+	2 - Importer le fichier sql se trouvant dans cakeStrap-master
+
+	3 - Testez
