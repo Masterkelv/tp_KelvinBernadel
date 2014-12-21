@@ -1,5 +1,5 @@
 
-    INSTALLATION DE LA BASE DE DONNÉES
+    			INSTALLATION
 
 
 	1 - Créer une base de données "gamingwebsites"
@@ -13,3 +13,11 @@
 		- Mot de passe : root
 
 	4 - Testez
+
+
+
+		    Infos supplémentaire
+	
+			- Les listes liées sont dans la section "Members" dans le "add"
+			
+			- Le auto-complete se trouve dans la section "Faction"

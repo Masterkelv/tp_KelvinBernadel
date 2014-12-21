@@ -8,6 +8,8 @@ App::uses('AppController', 'Controller');
  */
 class MembersController extends AppController {
 
+	public $helpers = array('Js');
+
 /**
  * Components
  *
@@ -55,9 +57,13 @@ class MembersController extends AppController {
 				$this->Session->setFlash(__('The member could not be saved. Please, try again.'), array ('class' => 'alert alert-danger'));
 			}
 		}
-		$factions = $this->Member->Faction->find('list');
-		$factions = $this->Member->Faction->find('list');
-		$this->set(compact('factions', 'factions'));
+		//$factions = $this->Member->Faction->find('list');
+		//$factions = $this->Member->Faction->find('list');
+		$categories = $this->Member->Subcategory->Category->find('list');
+		//$subcategories = $this->Member->Subcategory->find('list');
+        $subcategories = array('choisir categorie');
+        $this->set(compact('categories', 'subcategories'));
+    //    $this->set(compact('factions', 'factions'));
 	}
 
 /**
@@ -82,9 +88,11 @@ class MembersController extends AppController {
 			$options = array('conditions' => array('Member.' . $this->Member->primaryKey => $id));
 			$this->request->data = $this->Member->find('first', $options);
 		}
-		$factions = $this->Member->Faction->find('list');
-		$factions = $this->Member->Faction->find('list');
-		$this->set(compact('factions', 'factions'));
+		//$factions = $this->Member->Faction->find('list');
+		//$factions = $this->Member->Faction->find('list');
+		//$this->set(compact('factions', 'factions'));
+		$subcategories = $this->Member->Subcategory->find('list');
+        $this->set(compact('subcategories'));
 	}
 
 /**

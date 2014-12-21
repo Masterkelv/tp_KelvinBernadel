@@ -21,6 +21,12 @@ class FactionsController extends AppController {
  * @return void
  */
 	public function index() {
+		if ($this->request->is('ajax')) {
+        $term = $this->request->query('term');
+        $carNames = $this->Title->getTitleNames($term);
+        $this->set(compact('titleNames'));
+        $this->set('_serialize', 'titleNames');
+      }
 		$this->Faction->recursive = 0;
 		$this->set('factions', $this->Paginator->paginate());
 	}
