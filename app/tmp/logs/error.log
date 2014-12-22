@@ -522,3 +522,54 @@ Request URL: /cakeStrap-master/eng/informations/about/6
 Stack Trace:
 #0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-12-22 03:49:06 Error: [MissingControllerException] Controller class InformationsController could not be found.
+Exception Attributes: array (
+  'class' => 'InformationsController',
+  'plugin' => NULL,
+)
+Request URL: /cakeStrap-master/informations/about/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 03:49:39 Error: [MissingActionException] Action PagesController::about() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'about',
+)
+Request URL: /cakeStrap-master/eng/informations/about/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(InformationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 03:50:02 Error: [MissingViewException] View file "C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Pages\about.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files (x86)\\Ampps\\www\\cakeStrap-master\\app\\View\\Pages\\about.ctp',
+)
+Request URL: /cakeStrap-master/eng/informations/about/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(InformationsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 03:54:12 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\View\Pages\about.ctp, line 1]
+2014-12-22 03:54:12 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cakeStrap-master/eng/informations/about/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 1)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 1, Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 1, Array)
+#3 C:\Program Files (x86)\Ampps\www\cakeStrap-master\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 03:56:04 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /cakeStrap-master/eng/webroot/img/GW.svg
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeStrap-master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
